@@ -1,0 +1,103 @@
+/* html *
+{
+	margin: 0px;
+	padding: 0px;
+} */
+
+#slider
+{
+	height: 100%;
+	background-image:url('images/27.jpg') ;
+	background-size: cover;
+	-webkit-transition: background 1s ;
+    background-attachment:fixed;
+}
+@media only screen and (max-width: 768px) {
+    #slider:after {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+    #slider:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    }
+
+    /* Large screens ----------- */
+    /*@media only screen and (min-width : 1410px){
+	#slider{height: 970px;}
+	#slider:after{height: 970px;}
+	}*/
+
+    .icon {
+        font-size: 50px;
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+
+    #left {
+        float: left;
+        margin: 250px 30px;
+        background: rgba(33,27,32,0.9);
+        box-shadow: 0px 10px 26px rgba(0,0,0,0.44);
+        top: 0;
+        bottom: 0;
+        width: 52px;
+        height: 90px;
+        line-height: 90px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+        #left:hover {
+            color: #000 !important;
+            background-color: rgba(255, 255, 255, 0.3) !important
+        }
+
+    #right {
+        float: right;
+        margin: 250px 30px;
+        background: rgba(33,27,32,0.9);
+        box-shadow: 0px 10px 26px rgba(0,0,0,0.44);
+        top: 0;
+        bottom: 0;
+        width: 52px;
+        height: 90px;
+        line-height: 90px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+        #right:hover {
+            color: #000 !important;
+            background-color: rgba(255, 255, 255, 0.3) !important
+        }
+
+    .slidh2, .slidep {
+        color: #fff;
+        text-align: center;
+        z-index: 3;
+        position: relative;
+    }
+
+    .slideh2 {
+        font-size: 52px;
+        padding-top: 230px;
+    }
+
+#under: {
+    &#xE313;
+}
