@@ -88,10 +88,10 @@ $(window).on("scroll", function () {
         $("header").removeClass("mobile-disable");
     }
 
-    if ($(this).scrollTop() > 130 && window.matchMedia('(max-width: 768px)').matches) {
-        document.getElementById("fh5co-logo").style.display = 'none';
+    if ($(this).scrollTop() > 50 && window.matchMedia('(max-width: 768px)').matches) {
+        document.getElementById("fh5co-header").style.display = 'none';
     } else {
-        document.getElementById("fh5co-logo").style.display = 'block';
+        document.getElementById("fh5co-header").style.display = 'block';
     }
 });
 //.........................................................
@@ -178,17 +178,3 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("fh5co-header").style.display = "block";
 }
-
-//$('#open-founder')
-//    //.css({ cursor: "pointer" })
-//    .on('click', function () {
-//        var x = document.getElementById("myNav");
-//        if (x.className.indexOf("w3-show") == -1) {
-//            x.className += " w3-show";
-//            x.style.height += "600px";
-//            x.className += x.className.replace("overlay", "");
-//        } else {
-//            x.className = x.className.replace(" w3-show", "");
-//        }
-
-//    })

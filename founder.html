@@ -79,7 +79,7 @@
     <!--جائزة الدكتور محمود-->
     <div class="container-fluid">
         <!--<button onclick="openNav()" class="w3-button w3-black">Open Tabbed Modal</button>-->
-        <div id="myNav" class="overlay">
+        <div id="myNav" class="overlay1">
             <div class="w3-modal-content overlay-content w3-blue" style="margin:0!important">
                 <a href="javascript:void(0)" class="w3-closebtn w3-margin-right" onclick="closeNav()">&times;</a>
                 <div class="container-fluid" style="background-color:#0D47A1">
@@ -610,7 +610,7 @@
     </div>
     <!--نهاية الجائزة-->
 
-    <div id="fh5co-wrapper container-fluid">
+    <div id="fh5co-wrapper">
         <div id="fh5co-page">
             <div id="fh5co-header">
                 <header id="fh5co-header-section">
@@ -632,8 +632,8 @@
                                     <li class="active">
                                         <a href="founder.html" class="fh5co-sub-ddown">The Founder</a>
                                         <ul class="fh5co-sub-menu">
-                                            <li><a href="founder.html#dr_farzat">Dr. Farzat Profile</a></li>
-                                            <li id="open-founder"><a href="founder.html#myNav">Dr. Farzat Prize</a></li>
+                                            <!--<li><a href="founder.html#dr_farzat">Dr. Farzat Profile</a></li>-->
+                                            <li><a href="prize.html">Dr. Farzat Prize</a></li>
                                             <li><a href="https://drive.google.com/file/d/0B2M-od738SmBNVNJaGs5M01GTDA/view?usp=sharing">Dr. Farzat Book 1st</a></li>
                                         </ul>
                                     </li>
@@ -693,7 +693,7 @@
                                         $SpacingY: 3,
                                         $Align: 260,
                                     },
-                                    //$SlideWidth: 800
+                                    //$SlideWidth: 1200
                                 };
 
                                 var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
@@ -847,99 +847,86 @@
                             }
                             @media screen and (max-width: 768px) {
                                 .slider1_container {
-                                    width: 700px;
-                                    margin-left:-150px;
+                                    width: 900px;
+                                    margin-left:-250px;
                                     /*height: 100%;*/
+                                }
+                                .slide-mobile{
+                                    top:115px!important;
                                 }
                             }
                         </style>
-                        <div id="jssor_1" class="fh5co-listing fh5co-overlay" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
+                        <div id="jssor_1" class="fh5co-listing fh5co-overlay w3-dark" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
                             <!-- Loading Screen -->
                             <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
                                 <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
                                 <div style="position:absolute;display:block;background:url('images/icons/gears1.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                             </div>
-                            <div data-u="slides" class="slider1_container fh5co-listing fh5co-cover" style="cursor:default;position:relative;top:0px;left:0px;overflow:hidden;">
-                                <div>
-                                    <img data-u="image" src="images/drfarzat/16.jpg" />
-                                    <img data-u="thumb" src="images/drfarzat/16.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="images/drfarzat/15.jpg" />
-                                    <img data-u="thumb" src="images/drfarzat/15.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="images/drfarzat/17.jpg" />
-                                    <img data-u="thumb" src="images/drfarzat/17.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="images/drfarzat/10.jpeg" />
-                                    <img data-u="thumb" src="images/drfarzat/10.jpeg" />
-                                </div>
-                                
-                            </div>
-                            <!--//كبسة الجائزة-->
-                            <div class="desc animate-box master-body w3-margin-top mobile-disable">
-                                <span><a class="btn btn-primary btn-lg w3-margin-top" onclick="openNav()">DR.MAHMOUD FARZAT CULTURAL PRIZE</a></span>
-                           
-
-                                    <!--<a data-fancybox data-src="http://farzat.co/founder.html#myNav" href="javascript:;">
-                                        External page
-                                    </a>
-
-                                    <br />
-
-                                    <span>
-                                        <a class="btn btn-primary btn-lg w3-margin-top" data-fancybox data-src="images/drfarzat/DR.FARZAT_CV.pdf" href="javascript:;">
-                                            Dr. Farzat Profile
-                                        </a></span>-->
-
-                            </div>
-
-                            <!-- Thumbnail Navigator -->
-                            <div data-u="thumbnavigator" class="jssort03" style="position:absolute;left:0px;bottom:0px;width:1400px;height:60px;" data-autocenter="1">
-                                <div style="position:absolute;top:0;left:-100px;width:120%;height:100%;background-color:#000;filter:alpha(opacity=30.0);opacity:0.3;"></div>
-                                <!-- Thumbnail Item Skin Begin -->
-                                <div data-u="slides" style="cursor: default;">
-                                    <div data-u="prototype" class="p">
-                                        <div class="w">
-                                            <div data-u="thumbnailtemplate" class="t"></div>
-                                        </div>
-                                        <div class="c"></div>
+                            <div class="slide-mobile" style="position: relative; left: 5%;top:97px; width:90%;text-align: center; ">
+                                <div data-u="slides" class="slider1_container fh5co-listing fh5co-cover" style="cursor:default;position:relative;top:0px;left:0px;overflow:hidden;">
+                                    <div>
+                                        <img data-u="image" src="images/drfarzat/16.jpg" />
+                                        <img data-u="thumb" src="images/drfarzat/16.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="images/drfarzat/15.jpg" />
+                                        <img data-u="thumb" src="images/drfarzat/15.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="images/drfarzat/17.jpg" />
+                                        <img data-u="thumb" src="images/drfarzat/17.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="images/drfarzat/10.jpeg" />
+                                        <img data-u="thumb" src="images/drfarzat/10.jpeg" />
                                     </div>
                                 </div>
-                                <!-- Thumbnail Item Skin End -->
-                            </div>
-                            <!-- Arrow Navigator -->
-                            <span data-u="arrowleft" class="jssora02l mobile-disable" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
-                            <span data-u="arrowright" class="jssora02r mobile-disable" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
-                            <button onclick="openNav()" class="w3-display-middle mobile-show w3-hide btn btn-primary btn-lg">CULTURAL PRIZE</button>
-                            <!-- box_mahmoud -->
-                            <!--<div id="ex5">
-                                <div id="center" class="w3-col w3-half col-xs-8 fh5co-item-wrap" style="position:initial !important;">
-                                    <div id="box_mahmoud" onclick="openNav()">
-                                        <a class="fh5co-listing-item" style="">
-                                            <img src="images/drfarzat/14.jpg" alt="Farzat" class="" style="margin:0px;width:240px;">
-                                            <h5 class="w3-text-amber w3-weight h3">DR.MAHMOUD FARZAT CULTURAL PRIZE</h5>
-                                            <div class="fh5co-listing-copy" style="margin-bottom:70px">
-                                                <h4 class="w3-text-amber w3-weight h3" style="padding:4px;white-space:normal;background: rgba(33,27,32,0.7) none repeat scroll 0 0;z-index: 2;height:auto;border-radius:4px;margin:-70px 0 60px 0!important;">DR.MAHMOUD FARZAT CULTURAL PRIZE</h4>
 
-                                                <span class="w3-text-amber w3-weight icon" style="background: rgba(33,27,32,0.7) none repeat scroll;z-index: 1000;">
-                                                    <i class="w3-text-amber w3-weight icon-chevron-right"></i>
-                                                </span>
+                                </div>
+
+
+                                <!-- Thumbnail Navigator -->
+                                <div data-u="thumbnavigator" class="jssort03" style="position:absolute;left:0px;bottom:0px;width:2000px;height:60px;" data-autocenter="1">
+                                    <div style="position:absolute;top:0;left:-100px;width:120%;height:100%;background-color:#000;filter:alpha(opacity=30.0);opacity:0.3;"></div>
+                                    <!-- Thumbnail Item Skin Begin -->
+                                    <div data-u="slides" style="cursor: default;">
+                                        <div data-u="prototype" class="p">
+                                            <div class="w">
+                                                <div data-u="thumbnailtemplate" class="t"></div>
                                             </div>
-                                        </a>
+                                            <div class="c"></div>
+                                        </div>
                                     </div>
+                                    <!-- Thumbnail Item Skin End -->
                                 </div>
-                            </div>-->
+                                <!-- Arrow Navigator -->
+                                <span data-u="arrowleft" class="jssora02l mobile-disable" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+                                <span data-u="arrowright" class="jssora02r mobile-disable" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+                                <!--<button onclick="openNav()" class="w3-display-middle mobile-show w3-hide btn btn-primary btn-lg">CULTURAL PRIZE</button>-->
+                                <!-- box_mahmoud -->
+                                <!--<div id="ex5">
+            <div id="center" class="w3-col w3-half col-xs-8 fh5co-item-wrap" style="position:initial !important;">
+                <div id="box_mahmoud" onclick="openNav()">
+                    <a class="fh5co-listing-item" style="">
+                        <img src="images/drfarzat/14.jpg" alt="Farzat" class="" style="margin:0px;width:240px;">
+                        <h5 class="w3-text-amber w3-weight h3">DR.MAHMOUD FARZAT CULTURAL PRIZE</h5>
+                        <div class="fh5co-listing-copy" style="margin-bottom:70px">
+                            <h4 class="w3-text-amber w3-weight h3" style="padding:4px;white-space:normal;background: rgba(33,27,32,0.7) none repeat scroll 0 0;z-index: 2;height:auto;border-radius:4px;margin:-70px 0 60px 0!important;">DR.MAHMOUD FARZAT CULTURAL PRIZE</h4>
 
-
-                            <!--<script type="text/javascript">
-                                var x = document.getElementById('box_mahmoud').className += 'box_3 animated fadeInLeftBig';
-
-                            </script>-->
-
+                            <span class="w3-text-amber w3-weight icon" style="background: rgba(33,27,32,0.7) none repeat scroll;z-index: 1000;">
+                                <i class="w3-text-amber w3-weight icon-chevron-right"></i>
+                            </span>
                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>-->
+                                <!--<script type="text/javascript">
+            var x = document.getElementById('box_mahmoud').className += 'box_3 animated fadeInLeftBig';
+
+        </script>-->
+
+                            </div>
                         <!-- #endregion Jssor Slider End -->
                     </div>
 
@@ -1060,7 +1047,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <br />
             <br />
             <br />
@@ -1068,10 +1055,13 @@
             <br />
             <br />
             <br />
+            <!--//كبسة الجائزة-->
+            <div class="desc w3-margin-top w3-center">
+                <span><a class="btn btn-primary btn-lg w3-margin-top" onclick="openNav()">DR.FARZAT CULTURAL PRIZE</a></span>
+            </div>
             <br />
             <br />
             &nbsp;
-            
 
             <footer>
                 <div id="footer" class="w3-opacity-min">
@@ -1163,7 +1153,7 @@
                                 $('.quickFlip2').quickFlip();
                             });
     </script>
-    <script>
+    <!--<script>
                             // Two things to note here:
                             //     1. We use .stop() to prevent the "buildup" of animations
                             //     2. We capture the hover event on a different element than the one we
@@ -1182,7 +1172,7 @@
                             $('#ex6').click(function () {
                                 $(this).rotate3Di('toggle', 1000, { direction: 'clockwise' });
                             });
-    </script>
+    </script>-->
 
     <script type="text/javascript">
                             $(document).ready(function () {

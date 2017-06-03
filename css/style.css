@@ -402,7 +402,7 @@ figure {
 .sf-menu ul li a,
 .sf-menu ul ul li a {
   text-transform: none;
-  padding: 0.6em 1.2em !important;
+  padding: 0.3em 0.8em !important;
   letter-spacing: 1px;
   font-size: 16px !important;
   font-weight:500;

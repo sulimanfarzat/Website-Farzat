@@ -625,7 +625,7 @@ section:hover .section-heading .zoom-viewall{
     background: rgba(33,27,32,0.9) none repeat scroll 0 0;
     box-shadow: 0px 10px 26px rgba(0,0,0,0.44);
     border-radius: 0px;
-    margin: 10em 0 0 2em;
+    margin: 8em 0 0 2em;
     overflow: hidden;
     padding: 1em;
     box-sizing: border-box;
@@ -663,7 +663,7 @@ section:hover .section-heading .zoom-viewall{
 }
 
 @media screen and (max-width: 768px) {
-    .box_2, .box, .mobile-disable, .box_3 {
+    /*.box_2,*/ .box, .mobile-disable, .box_3 {
         display: none!important;
     }	
     .hide-top{top:0!important;}
@@ -672,6 +672,13 @@ section:hover .section-heading .zoom-viewall{
         top: 50%;
         left: 50%;
         display:block!important;
+    }
+    .about {
+        margin-top: 670px!important;
+        background: #17202a !important;
+    }
+    .box_2{
+        max-height:initial;
     }
 }
 
@@ -827,7 +834,8 @@ min-width:310px; height:300px;
     position: relative;
     top: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
+    min-height: 654px;
     text-align: center;
     margin-top: 0px;
 }
@@ -838,18 +846,30 @@ min-width:310px; height:300px;
 }*/
 
 .overlay {
-    height: 0%;
+    
+    height: 100%;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 3;
-    top: 0px;
     left: 0;
+    margin-top:129px;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
 }
-
+.overlay1 {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
     .overlay a {
         /*padding: 8px;*/
         text-decoration: none;
@@ -872,21 +892,24 @@ min-width:310px; height:300px;
 
 @media screen and (max-height: 450px) {
     .overlay {
-        overflow-y: auto!important;
-        position:absolute !important;
+        overflow-y: auto !important;
+        position: absolute !important;
+        margin-top: 129px;
     }
-
         .overlay a {
             font-size: 20px
         }
-
         .overlay .closebtn {
             font-size: 10px;
             top: 15px;
             right: 0px;
         }
 }
-
+@media screen and (max-width: 768px) {
+    .overlay {
+        margin-top: 150px !important;
+    }
+}
 
 
 /*.fancybox-thumbs {
