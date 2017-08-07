@@ -59,6 +59,8 @@
 
     <link rel="stylesheet" href="js/fancybox-3.0/dist/jquery.fancybox.min.css" />
 
+    <link rel="stylesheet" type="text/css" href="css/stylefounder.css" />
+
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -71,603 +73,23 @@
     <script src="js/html5shiv.js"></script>
   <![endif]-->
     <style>
-        .icon-youtube22 {
-            vertical-align: -14%
+        #quickFlipCta, #quickFlip {
+            padding: 5px;
         }
-        a.ex1:link {
-            color: gray;
-            text-decoration: underline;
+
+        #quickFlipCta {
+            padding: 20px;
+            display: none;
+            text-align: left;
+        }
+        .material-icons{
+            vertical-align:-9px;
         }
     </style>
 
 </head>
 
-<body onload="sliderTimer()">
-
-    <!--جائزة الدكتور محمود-->
-    <div class="container">
-        <!--<button onclick="openNav()" class="w3-button w3-black">Open Tabbed Modal</button>-->
-        <div id="myNav" class="overlay1">
-            <div class="w3-modal-content overlay-content w3-blue" style="margin:0!important">
-                <a href="javascript:void(0)" class="w3-closebtn w3-margin-right" onclick="closeNav()">&times;</a>
-                <div class="container-fluid" style="background-color:#0D47A1">
-                    <h2 class="w3-center w3-weight w3-text-white w3-margin-0 w3-padding-16">DR.MAHMOUD FARZAT CULTURAL PRIZE</h2>
-                </div>
-
-                <div class=" w3-row">
-                    <div class="tablink w3-btn w3-col s2 w3-dark-blue" onclick="openCity(event, '2005')">2005</div>
-                    <div class="tablink w3-btn w3-col s2 w3-dark-blue" onclick="openCity(event, '2006')">2006</div>
-                    <div class="tablink w3-btn w3-col s2 w3-dark-blue" onclick="openCity(event, '2007')">2007</div>
-                    <div class="tablink w3-btn w3-col s2 w3-dark-blue" onclick="openCity(event, '2008')">2008</div>
-                    <div class="tablink w3-btn w3-col s2 w3-dark-blue" onclick="openCity(event, '2009')">2009</div>
-                    <div class="tablink w3-btn w3-col s2 w3-dark-blue" onclick="openCity(event, '2010')">2010</div>
-                </div>
-
-                <div id="2005" class="w3-container city w3-text-black">
-                    <div class="row">
-                        <h2 class="w3-margin-top w3-weight">Prize 2005</h2>
-                        <div class="col-md-2 col-sm-2 col-xs-4 w3-panel">
-                            <p class="w3-text-white"><a data-fancybox class="video icon-youtube22 w3-text-white w3-hover-text-red  w3-xxlarge" href="https://youtu.be/jVOF3E8mMV4"></a></p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/1.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/1.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/2.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/2.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/3.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/3.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/4.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/4.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/5.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/5.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/6.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/6.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/8.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/8.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/9.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/9.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/10.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/10.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/11.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/11.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/12.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/12.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/13.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/13.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2005" class="zoomer" rel="prize" href="images/drfarzat/takrem/2005/7.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2005/7.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="2006" class="w3-container city">
-                    <div class="row">
-                        <h2 class="w3-margin-top w3-weight">Prize 2006</h2>
-                        <div class="col-md-2 col-sm-2 col-xs-4 w3-panel">
-                            <p class="w3-text-white"><a data-fancybox class="video icon-youtube22 w3-hover-text-red w3-text-white w3-xxlarge" href="https://youtu.be/g07aKgZYOd4"></a></p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/1.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/1.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/2.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/2.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/3.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/3.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/4.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/4.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/5.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/5.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/6.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/6.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/7.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/7.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/8.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/8.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/9.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/9.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/10.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/10.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/11.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/11.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/12.bmp" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/12.bmp" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/13.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/13.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/14.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/14.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/15.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/15.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/16.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/16.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/17.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/17.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/18.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/18.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/19.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/19.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/20.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/20.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/21.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/21.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2006" class="zoomer" rel="prize" href="images/drfarzat/takrem/2006/22.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2006/22.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="2007" class="w3-container city">
-                    <div class="row">
-                        <h2 class="w3-margin-top w3-weight">Prize 2007</h2>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2007" class="zoomer" rel="prize" href="images/drfarzat/takrem/2007/3.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2007/3.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2007" class="zoomer" rel="prize" href="images/drfarzat/takrem/2007/4.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2007/4.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2007" class="zoomer" rel="prize" href="images/drfarzat/takrem/2007/5.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2007/5.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2007" class="zoomer" rel="prize" href="images/drfarzat/takrem/2007/2.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2007/2.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2007" class="zoomer" rel="prize" href="images/drfarzat/takrem/2007/1.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2007/1.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="2008" class="w3-container city">
-                    <div class="row">
-                        <h2 class="w3-margin-top w3-weight">Prize 2008</h2>
-                        <div class="col-md-2 col-sm-2 col-xs-4 w3-panel">
-                            <p class="w3-text-white"><a data-fancybox class="video icon-youtube22 w3-hover-text-red w3-text-white w3-xxlarge" href="https://youtu.be/287rvTFujGA"></a></p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/1.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/1.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/2.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/2.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/3.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/3.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/4.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/4.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/5.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/5.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/6.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/6.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/7.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/7.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/8.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/8.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/9.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/9.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/10.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/10.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/11.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/11.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/12.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/12.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/13.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/13.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2008" class="zoomer" rel="prize" href="images/drfarzat/takrem/2008/14.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-thumbnail" src="images/drfarzat/takrem/2008/14.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div id="2009" class="w3-container city">
-                    <div class="row">
-                        <h2 class="w3-margin-top w3-weight">Prize 2009</h2>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <p class="w3-text-white"><a data-fancybox class="video icon-youtube22 w3-hover-text-red w3-text-white w3-xxlarge" href="https://youtu.be/pTUq4eX0XyA"></a></p>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2009" class="zoomer" rel="prize" href="images/drfarzat/takrem/2009/1.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2009/1.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2009" class="zoomer" rel="prize" href="images/drfarzat/takrem/2009/2.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2009/2.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2009" class="zoomer" rel="prize" href="images/drfarzat/takrem/2009/3.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2009/3.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="2010" class="w3-container city">
-                    <div class="row">
-                        <h2 class="w3-margin-top w3-weight">Prize 2010</h2>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2010" class="zoomer" rel="prize" href="images/drfarzat/takrem/2010/1.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2010/1.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2010" class="zoomer" rel="prize" href="images/drfarzat/takrem/2010/2.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2010/2.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2010" class="zoomer" rel="prize" href="images/drfarzat/takrem/2010/3.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2010/3.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2010" class="zoomer" rel="prize" href="images/drfarzat/takrem/2010/4.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2010/4.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2010" class="zoomer" rel="prize" href="images/drfarzat/takrem/2010/5.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2010/5.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images-2010" class="zoomer" rel="prize" href="images/drfarzat/takrem/2010/6.jpg" title="">
-                                <div class="overlay-zoom">
-                                    <img class="img-responsive" src="images/drfarzat/takrem/2010/6.jpg" alt="DR.MAHMOUD FARZAT CULTURAL PRIZE">
-                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="w3-container w3-blue w3-padding">
-                    <button class="w3-btn w3-right w3-gray w3-border"
-                            onclick="closeNav()">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--نهاية الجائزة-->
+<body>
 
     <div id="fh5co-wrapper">
         <div id="fh5co-page">
@@ -677,7 +99,7 @@
                         <div class="nav-header">
                             <a class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
                             <h1>
-                                <a href="index.html"><img class="w3-opacity-min w3-hover-opacity-off" id="fh5co-logo" src="images/logos/FARZAT-TRANSPARENT-new.png"></a>
+                                <a href="index.html"><img id="fh5co-logo" src="images/logos/FARZAT-TRANSPARENT-new.png"></a>
                             </h1>
                             <!-- START #fh5co-menu-wrap -->
                             <nav id="fh5co-menu-wrap" role="navigation">
@@ -697,7 +119,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="" class="fh5co-sub-ddown">Company</a>
+                                        <a href="development.html" class="fh5co-sub-ddown">Company</a>
                                         <ul class="fh5co-sub-menu">
                                             <li>
                                                 <a href="development.html" class="fh5co-sub-ddown">DEVELOPMENT</a>
@@ -730,268 +152,29 @@
 
 
             <div class="fh5co-hero">
+                <div class="fh5co-overlay"></div>
+                <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url();">
 
-                <div class="fh5co-cover">
-                    <div style="padding:0px; margin:0px; background-color:#fff;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
-
-                        <!-- This code works with jquery library. -->
-                        <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-                        <script src="js/jssor.slider-22.1.9.mini.js" type="text/javascript"></script>
-                        <script type="text/javascript">
-                            jQuery(document).ready(function ($) {
-
-                                var jssor_1_options = {
-                                    $AutoPlay: true,
-                                    $ArrowNavigatorOptions: {
-                                        $Class: $JssorArrowNavigator$
-                                    },
-                                    $ThumbnailNavigatorOptions: {
-                                        $Class: $JssorThumbnailNavigator$,
-                                        $Cols: 15,
-                                        $SpacingX: 3,
-                                        $SpacingY: 3,
-                                        $Align: 260,
-                                    },
-                                    //$SlideWidth: 1200
-                                };
-
-                                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-                                /*responsive code begin*/
-                                /*you can remove responsive code if you don't want the slider scales while window resizing*/
-                                function ScaleSlider() {
-                                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                                    if (refSize) {
-                                        refSize = Math.min(refSize, '100%');
-                                        jssor_1_slider.$ScaleWidth(refSize);
-                                    } else {
-                                        window.setTimeout(ScaleSlider, 30);
-                                    }
-                                }
-                                ScaleSlider();
-                                $(window).bind("load", ScaleSlider);
-                                $(window).bind("resize", ScaleSlider);
-                                $(window).bind("orientationchange", ScaleSlider);
-                                /*responsive code end*/
-                            });
-
-                        </script>
-                        <style>
-                            /* jssor slider arrow navigator skin 02 css */
-                            /*
-                            .jssora02l                  (normal)
-                            .jssora02r                  (normal)
-                            .jssora02l:hover            (normal mouseover)
-                            .jssora02r:hover            (normal mouseover)
-                            .jssora02l.jssora02ldn      (mousedown)
-                            .jssora02r.jssora02rdn      (mousedown)
-                            .jssora02l.jssora02lds      (disabled)
-                            .jssora02r.jssora02rds      (disabled)
-                            */
-
-                            .jssora02l,
-                            .jssora02r {
-                                display: block;
-                                position: absolute;
-                                /* size of arrow element */
-                                width: 55px;
-                                height: 55px;
-                                cursor: pointer;
-                                background: url('images/icons/a02.png') no-repeat;
-                                overflow: hidden;
-                            }
-
-                            .jssora02l {
-                                background-position: -3px -33px;
-                            }
-
-                            .jssora02r {
-                                background-position: -63px -33px;
-                            }
-
-                            .jssora02l:hover {
-                                background-position: -123px -33px;
-                            }
-
-                            .jssora02r:hover {
-                                background-position: -183px -33px;
-                            }
-
-                            .jssora02l.jssora02ldn {
-                                background-position: -3px -33px;
-                            }
-
-                            .jssora02r.jssora02rdn {
-                                background-position: -63px -33px;
-                            }
-
-                            .jssora02l.jssora02lds {
-                                background-position: -3px -33px;
-                                opacity: .3;
-                                pointer-events: none;
-                            }
-
-                            .jssora02r.jssora02rds {
-                                background-position: -63px -33px;
-                                opacity: .3;
-                                pointer-events: none;
-                            }
-                            /* jssor slider thumbnail navigator skin 03 css */
-                            /*.jssort03 .p            (normal).jssort03 .p:hover      (normal mouseover).jssort03 .pav          (active).jssort03 .pdn          (mousedown)*/
-
-                            .jssort03 .p {
-                                position: absolute;
-                                top: 0;
-                                left: 0px;
-                                width: 62px;
-                                height: 32px;
-                            }
-
-                            .jssort03 .t {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                border: none;
-                            }
-
-                            .jssort03 .w,
-                            .jssort03 .pav:hover .w {
-                                position: absolute;
-                                width: 60px;
-                                height: 30px;
-                                border: white 1px dashed;
-                                box-sizing: content-box;
-                            }
-
-                            .jssort03 .pdn .w,
-                            .jssort03 .pav .w {
-                                border-style: solid;
-                            }
-
-                            .jssort03 .c {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 62px;
-                                height: 32px;
-                                background-color: #000;
-                                filter: alpha(opacity=45);
-                                opacity: .45;
-                                transition: opacity .6s;
-                                -moz-transition: opacity .6s;
-                                -webkit-transition: opacity .6s;
-                                -o-transition: opacity .6s;
-                            }
-
-                            .jssort03 .p:hover .c,
-                            .jssort03 .pav .c {
-                                filter: alpha(opacity=0);
-                                opacity: 0;
-                            }
-
-                            .jssort03 .p:hover .c {
-                                transition: none;
-                                -moz-transition: none;
-                                -webkit-transition: none;
-                                -o-transition: none;
-                            }
-
-                            * html .jssort03 .w {
-                                width /**/: 62px;
-                                height /**/: 32px;
-                            }
-                            @media screen and (max-width: 768px) {
-                                .slider1_container {
-                                    width: 900px;
-                                    margin-left: -250px;
-                                    /*height: 100%;*/
-                                }
-                                .slide-mobile{
-                                    top:115px!important;
-                                }
-                            }
-                        </style>
-                        <div id="jssor_1" class="fh5co-listing fh5co-overlay" style="position:relative;margin:0 auto;top:16px;left:0px;overflow:hidden;visibility:hidden;">
-                            <!-- Loading Screen -->
-                            <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
-                                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                                <div style="position:absolute;display:block;background:url('images/icons/gears1.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-                            </div>
-                            <div class="slide-mobile" style="position: relative; left: 10%;top:97px; width:80%;text-align: center; ">
-                                <div data-u="slides" class="slider1_container fh5co-listing fh5co-cover" style="cursor:default;position:relative;top:0px;left:0px;overflow:hidden;">
-                                    <div>
-                                        <img data-u="image" src="images/drfarzat/16.jpg" />
-                                        <img data-u="thumb" src="images/drfarzat/16.jpg" />
-                                    </div>
-                                    <div>
-                                        <img data-u="image" src="images/drfarzat/15.jpg" />
-                                        <img data-u="thumb" src="images/drfarzat/15.jpg" />
-                                    </div>
-                                    <div>
-                                        <img data-u="image" src="images/drfarzat/17.jpg" />
-                                        <img data-u="thumb" src="images/drfarzat/17.jpg" />
-                                    </div>
-                                    <div>
-                                        <img data-u="image" src="images/drfarzat/10.jpeg" />
-                                        <img data-u="thumb" src="images/drfarzat/10.jpeg" />
-                                    </div>
-                                </div>
-
-                                </div>
+                    <ul class="cb-slideshow">
+                        <li style="color:transparent;"><span>Image 01</span></li>
+                        <li style="color:transparent;"><span>Image 02</span></li>
+                        <li style="color:transparent;"><span>Image 03</span></li>
+                        <li style="color:transparent;"><span>Image 04</span></li>
+                        <li style="color:transparent;"><span>Image 05</span></li>
+                        <li style="color:transparent;"><span>Image 06</span></li>
+                    </ul>
 
 
-                                <!-- Thumbnail Navigator -->
-                                 <!--<div data-u="thumbnavigator" class="jssort03" style="position:absolute;left:0px;bottom:0px;width:2000px;height:60px;" data-autocenter="1">
-                                    <div style="position:absolute;top:0;left:-100px;width:120%;height:100%;background-color:#000;filter:alpha(opacity=30.0);opacity:0.3;"></div>
-                                    <div data-u="slides" style="cursor: default;">
-                                        <div data-u="prototype" class="p">
-                                            <div class="w">
-                                                <div data-u="thumbnailtemplate" class="t"></div>
-                                            </div>
-                                            <div class="c"></div>
-                                        </div>
-                                    </div>
-                                </div>-->
-                                <!-- Arrow Navigator -->
-                                <span data-u="arrowleft" class="jssora02l mobile-disable" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
-                                <span data-u="arrowright" class="jssora02r mobile-disable" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
-                                <!--<button onclick="openNav()" class="w3-display-middle mobile-show w3-hide btn btn-primary btn-lg">CULTURAL PRIZE</button>-->
-                                <!-- box_mahmoud -->
-                                <!--<div id="ex5">
-            <div id="center" class="w3-col w3-half col-xs-8 fh5co-item-wrap" style="position:initial !important;">
-                <div id="box_mahmoud" onclick="openNav()">
-                    <a class="fh5co-listing-item" style="">
-                        <img src="images/drfarzat/14.jpg" alt="Farzat" class="" style="margin:0px;width:240px;">
-                        <h5 class="w3-text-amber w3-weight h3">DR.MAHMOUD FARZAT CULTURAL PRIZE</h5>
-                        <div class="fh5co-listing-copy" style="margin-bottom:70px">
-                            <h4 class="w3-text-amber w3-weight h3" style="padding:4px;white-space:normal;background: rgba(33,27,32,0.7) none repeat scroll 0 0;z-index: 2;height:auto;border-radius:4px;margin:-70px 0 60px 0!important;">DR.MAHMOUD FARZAT CULTURAL PRIZE</h4>
 
-                            <span class="w3-text-amber w3-weight icon" style="background: rgba(33,27,32,0.7) none repeat scroll;z-index: 1000;">
-                                <i class="w3-text-amber w3-weight icon-chevron-right"></i>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>-->
-                                <!--<script type="text/javascript">
-            var x = document.getElementById('box_mahmoud').className += 'box_3 animated fadeInLeftBig';
-
-        </script>-->
-
-                            </div>
-                        <!-- #endregion Jssor Slider End -->
+                    <div class="desc animated fadeInUpBig master-body">
+                        <h2>Dr.Eng. Mahmoud FARZAT</h2>
+                        <!--<span><a class="btn btn-primary btn-lg" href="#famco">Get Started</a></span>-->
                     </div>
-
-
-
-
                 </div>
-
             </div>
-            <div id="center" class="w3-container w3-margin-top">
+
+
+            <!--<div id="center" class="w3-container w3-margin-top">
                 <div class="w3-container w3-card-4 w3-margin-top" style="width:70%">
                     <h4 class="w3-margin-top w3-text-green w3-weight">Watch Videos On Youtube: </h4>
                     <p class="w3-margin w3-weight w3-margin-top">
@@ -1008,171 +191,144 @@
                     </p>
                     <p><a class="w3-hover-text-blue w3-small ex1" href="https://www.youtube.com/channel/UCCSnx8NH7vsXUPvpUGi4aZg">Visit FARZAT channel on youtube</a></p>
                 </div>
-            </div>
-            
-            <div id="center" style="margin-top:30px;" class="w3-container w3-margin w3-padding ">
-                <div id="dr_farzat" class="w3-card-4" style="width:70%">
-                    
-                    <div class="w3-container w3-green">
-                        <br>
-                        <h3 class="w3-weight w3-text-white">Dr.Eng. Mahmoud FARZAT</h3>
-                    </div>
-                    <div class="w3-container w3-sand w3-text-dark-grey">
-                        <img id="ex5" src="images/drfarzat/4.jpg" alt="Dr.Farzat" class="w3-left w3-margin-" style="width:85px;margin:10px 20px 0px 0px;"><br>
-                        <strong style="font-family:initial;">Curriculum Vitae</strong>
-                        <hr class="w3-border-green w3-border-bottom" style=""><br><br>
+            </div>-->
+            <div class="fh5co-listing">
+                <div id="center" class="w3-container w3-padding-16">
+                    <div id="dr_farzat" class="w3-card-4">
 
-
-                        <ul style="list-style-type:square; font-family: 'Bariol', sans-serif; ">
-                            <li><strong>Full name: Mahmoud Tlas FARZAT.</strong></li>
-                            <li><strong>Father and mother: Suleiman and Fatima.</strong></li>
-                            <li><strong>Place and date of birth: Rastan - Homs 06/03/1948.</strong></li>
-                            <li><strong>Status:  married and have 2 girls, and 1 boy.</strong></li>
-                            <li><strong>Diplomas:</strong></li>
-
-                            <ul>
-                                <li>Primary school: Rastan Schools - 1960.</li>
-                                <li>Secondary and High school: Homs Schools - 1968.</li>
-                                <li>University degree: Damascus University - 1972.</li>
-                                <li>PH. Doctor: Bucharest Politeknik High Institute - 1978.</li>
-                            </ul>
-                            <li><strong>Activities:</strong></li>
-                            <ul>
-                                <li>Dr. Mahmoud FARZAT Prize: to be awarded to the top five students in the secondary and high school.  </li>
-                                <li>Contributing and financing "AL - MAHMOUD Mosque Complex " Rastan - Syria.</li>
-                                <li>Contributing and financing " ENG. ZIAD FARZAT for Islamic Scientific Institute" Rastan – Syria.</li>
-                                <li>Contributing and financing "  AL- MAHMOUD  Orphans House" Rastan – Syria. It can hold about 120 orphans.</li>
-                                <li>Contributing to build "Dr. Mahmoud FARZAT Main Clock Square" Rastan – Syria.</li>
-                                <li>Contributing to build "Dr. Mahmoud FARZAT Main Clock Square" Telbissa – Syria.</li>
-                                <li>Contributing to build "AL-MAHMOUD House for Handicapped Children" Telbissa - Syria.</li>
-                                <li>Contributing and financing "Al-MAHMOUD Islamic High School- " ( male and female).</li>
-                                <li>Contributing to several charities and social parties in Syria.</li>
-                            </ul>
-                            <li><strong>Courses:</strong></li>
-                            <ul>
-                                <li>Course in industrial safety, UNIDO organization - 1973.</li>
-                                <li>Course in international economic affairs, Switzerland - 1982.</li>
-                                <li>Course in international commercial affairs, Dubai - 2001.</li>
-                            </ul>
-                            <li><strong>Member of several scientific, social, and charitable communities.</strong></li>
-                            <li><strong>Current positions:</strong></li>
-                            <ul>
-                                <li>Chairman of Farzat Group for Development - Syria.</li>
-                                <li>Chairman of Syrian Saudi Chemical Co.LTD (SYSACCO) - Syria.</li>
-                                <li>Founding member of Cham Bank - Syria.</li>
-                                <li>Founding member of Syrian Islamic Insurance Co. - Syria.</li>
-                                <li>Founding member of Al Sharq Bank - Syria.</li>
-                                <li>Board of director member of Qatar National Bank (QNB) - Syria.</li>
-                                <li>Deputy Chairman of Qasioun University - Syria.</li>
-                                <li>Chairman of SHAMTEX CO.SA - Egypt.</li>
-                                <li>Chairman of M. F. Trading Est. - Lebanon.</li>
-                                <li>Chairman of Farzat for Development Co. - Turkey.</li>
-                            </ul>
-                        </ul><br>
-                        <div class="w3-margin-bottom" onclick="">
-                            <i class="w3-hover-text-red w3-cursor material-icons w3-xxlarge" href="#" onclick="window.open('images/drfarzat/DR.FARZAT_CV.pdf', '_blank', 'fullscreen=yes'); return false;">
-                                &#xE415;
-                            </i><i onclick="document.getElementById('share1').style.display='block'" class="w3-hover-text-red w3-cursor material-icons w3-xxlarge">&nbsp;&nbsp;&#xE80D;</i>
+                        <div class="w3-container w3-green">
+                            <br>
+                            <h3 class="w3-text-white">Dr.Eng. Mahmoud FARZAT</h3>
                         </div>
+                        <div class="w3-container w3-sand w3-text-dark-grey">
+                            <img id="ex5" src="images/drfarzat/thumbnails/4_tn.jpg" alt="Dr.Farzat" class="w3-left w3-margin-" style="width:85px;margin:10px 20px 0px 0px;"><br>
+                            <strong style="font-family:initial;">Curriculum Vitae</strong>
+                            <hr class="w3-border-green w3-border-bottom" style=""><br><br>
 
-                        <!-- AddToAny BEGIN -->
-                        <div id="share1" onclick="this.style.display='none'" class="a2a_kit a2a_kit_size_32 a2a_default_style w3-modal w3-center">
-                            <div class="w3-modal-content w3-card-8" style="max-width:200px;top:100px;margin:0 auto;">
-                                <a class="a2a_button_faceDr. Farzat Book 1st"></a>
+
+                            <ul style="list-style-type:square; font-family: 'Bariol', sans-serif; ">
+                                <li><strong>Full name: Mahmoud Tlas FARZAT.</strong></li>
+                                <li><strong>Father and mother: Suleiman and Fatima.</strong></li>
+                                <li><strong>Place and date of birth: Rastan - Homs 06/03/1948.</strong></li>
+                                <li><strong>Status:  married and have 2 girls, and 1 boy.</strong></li>
+                                <li><strong>Diplomas:</strong></li>
+
+                                <ul>
+                                    <li>Primary school: Rastan Schools - 1960.</li>
+                                    <li>Secondary and High school: Homs Schools - 1968.</li>
+                                    <li>University degree: Damascus University - 1972.</li>
+                                    <li>PH. Doctor: Bucharest Politeknik High Institute - 1978.</li>
+                                </ul>
+                                <li><strong>Activities:</strong></li>
+                                <ul>
+                                    <li>Dr. Mahmoud FARZAT Prize: to be awarded to the top five students in the secondary and high school.  </li>
+                                    <li>Contributing and financing "AL - MAHMOUD Mosque Complex " Rastan - Syria.</li>
+                                    <li>Contributing and financing " ENG. ZIAD FARZAT for Islamic Scientific Institute" Rastan – Syria.</li>
+                                    <li>Contributing and financing "  AL- MAHMOUD  Orphans House" Rastan – Syria. It can hold about 120 orphans.</li>
+                                    <li>Contributing to build "Dr. Mahmoud FARZAT Main Clock Square" Rastan – Syria.</li>
+                                    <li>Contributing to build "Dr. Mahmoud FARZAT Main Clock Square" Telbissa – Syria.</li>
+                                    <li>Contributing to build "AL-MAHMOUD House for Handicapped Children" Telbissa - Syria.</li>
+                                    <li>Contributing and financing "Al-MAHMOUD Islamic High School- " ( male and female).</li>
+                                    <li>Contributing to several charities and social parties in Syria.</li>
+                                </ul>
+                                <li><strong>Courses:</strong></li>
+                                <ul>
+                                    <li>Course in industrial safety, UNIDO organization - 1973.</li>
+                                    <li>Course in international economic affairs, Switzerland - 1982.</li>
+                                    <li>Course in international commercial affairs, Dubai - 2001.</li>
+                                </ul>
+                                <li><strong>Member of several scientific, social, and charitable communities.</strong></li>
+                                <li><strong>Current positions:</strong></li>
+                                <ul>
+                                    <li>Chairman of Farzat Group for Development - Syria.</li>
+                                    <li>Chairman of Syrian Saudi Chemical Co.LTD (SYSACCO) - Syria.</li>
+                                    <li>Founding member of Cham Bank - Syria.</li>
+                                    <li>Founding member of Syrian Islamic Insurance Co. - Syria.</li>
+                                    <li>Founding member of Al Sharq Bank - Syria.</li>
+                                    <li>Board of director member of Qatar National Bank (QNB) - Syria.</li>
+                                    <li>Deputy Chairman of Qasioun University - Syria.</li>
+                                    <li>Chairman of SHAMTEX CO.SA - Egypt.</li>
+                                    <li>Chairman of M. F. Trading Est. - Lebanon.</li>
+                                    <li>Chairman of Farzat for Development Co. - Turkey.</li>
+                                </ul>
+                            </ul><br>
+                            <div class="w3-margin-bottom">
+                                <p>
+                                    English
+                                    <i class="w3-hover-text-red w3-cursor material-icons w3-xxlarge" href="#" onclick="window.open('images/drfarzat/DR.FARZAT_CV.pdf', '_blank', 'fullscreen=yes'); return false;">
+                                        &#xE415;
+                                    </i>&nbsp; &nbsp; 
+                                    Arabic
+                                    <i class="w3-hover-text-red w3-cursor material-icons w3-xxlarge" href="#" onclick="window.open('images/drfarzat/DR.FARZAT_CV_AR.pdf', '_blank', 'fullscreen=yes'); return false;">
+                                        &#xE415;
+                                    </i>
+                                    <i onclick="document.getElementById('share1').style.display='block'" class="w3-hover-text-red w3-cursor material-icons w3-xxlarge">&nbsp;&nbsp;&#xE80D;</i>
+                                </p>
+                            </div>
+
+                            <!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                                 <a class="a2a_button_twitter"></a>
+                                <a class="a2a_button_facebook"></a>
                                 <a class="a2a_button_google_plus"></a>
-                                <a class="a2a_button_line"></a>
-                                <a class="a2a_button_viber"></a>
-                                <a class="a2a_button_outlook_com"></a>
-                                <a class="a2a_button_faceDr. Farzat Book 1st_messenger"></a>
+                                <a class="a2a_button_email"></a>
                                 <a class="a2a_button_whatsapp"></a>
-                                <a class="a2a_button_linkedin"></a>
+                                <a class="a2a_button_skype"></a>
+                                <a class="a2a_button_viber"></a>
                                 <a class="a2a_button_telegram"></a>
                                 <a class="a2a_button_print"></a>
-                                <a class="a2a_button_email"></a>
-                                <a class="a2a_button_google_gmail"></a>
                                 <a class="a2a_button_copy_link"></a>
-                                <a class="a2a_button_sms"></a>
+                                <a class="a2a_button_linkedin"></a>
                             </div>
-                        </div>
-                        <script>
-                            var a2a_config = a2a_config || {};
-                            a2a_config.locale = "en";
-                        </script>
-                        <script async src="https://static.addtoany.com/menu/page.js"></script>
-                        <!-- AddToAny END -->
-                        <br>
+                            <script async src="https://static.addtoany.com/menu/page.js"></script>
+                            <!-- AddToAny END -->
+                            
+                            <br>
 
-                    </div>
-                    <div class="quickFlip w3-margin-0">
-                        <div class="blackPanel w3-btn-block w3-green"><div class="quickFlipCta">+ Connect</div></div>
-                        <div class="redPanel">
-                            <div class="quickFlipCta w3-panel w3-amber w3-card-8 w3-text-blue-grey w3-padding-top">
+                        </div>
+
+                         <div id="quickFlip"  class="w3-btn-block w3-green">+ Connect</div>
+                         <div id="quickFlipCta" class="w3-amber w3-card-8 w3-text-blue-grey">
                                 <strong>OUR HEAD OFFICE:</strong>
                                 <p class="w3-text-grey">
-                                    Tel.: +20 554 412 937   <br>
-                                    Fax : +20 554 412 939      <br>
-                                    Mobile: +20 12 0110 5350   <br/>
-                                    Emai: info@farzat.co  <br>
+                                    PLOT NO.114, INDUSTRIAL ARE A6,
+                                    10th of RAMADAN CIT – EGYPT<br>
+                                    TEL.: +20 554 412 937   <br>
+                                    FAX : +20 554 412 939      <br>
+                                    GSM: +20 12 0110 5350   <br />
+                                    E-MAIL: INFO@SHAMTEX.CO<br>
                                     <a href="www.farzat.co" class="w3-text-gray">www.farzat.co</a>
                                 </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+ 
             </div>
-            
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <!--//كبسة الجائزة-->
-            <div class="desc w3-margin-top w3-center">
-                <span><a class="btn btn-primary btn-lg w3-margin-top" onclick="openNav()">DR.FARZAT CULTURAL PRIZE</a></span>
-            </div>
-            <br />
-            <br />
-            &nbsp;
-
-            <footer>
-                <div id="footer" class="w3-opacity-min">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 text-center">
-                                <p class="fh5co-social-icons">
-                                    <a target="_blank" href="https://plus.google.com/+MudarFARZAT/posts"><i class="icon-google2"></i></a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCCSnx8NH7vsXUPvpUGi4aZg"><i class="icon-youtube"></i></a>
-                                    <a target="_blank" href="https://www.facebook.com/farzatgroup?ref=hl"><i class="icon-facebook2"></i></a>
-                                    <!--  <a target="_blank" href="#"><i class="icon-instagram"></i></a> -->
-                                    <a target="_blank" href="https://www.linkedin.com/in/farzat-group-for-development-a8b779135/"><i class="icon-linkedin2"></i></a>
-                                    <a target="_blank" href="skype:m_farzat?call"><i class="icon-skype2"></i></a>
-
-                                    <!--  <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script> -->
-                                    <!--    <div id="SkypeButton_Call_m_farzat_1" class="">
-                                        <script type="text/javascript">
-                                        Skype.ui({
-                                            "name": "dropdown",
-                                            "element": "SkypeButton_Call_m_farzat_1",
-                                            "participants": ["m_farzat"],
-                                            "imageSize": 24
-                                        });
-                                        </script>
-                                    </div> -->
-                                </p>
-                                <p style="margin-bottom:0;">
-                                    Copyright 2016 Farzat Group.
-                                    <a href="#"></a> All Rights Reserved. <br>Made by <i class="icon-heart3"></i>  <a href="https://www.facebook.com/Suliman.Farzat" target="_blank">Suliman Farzat</a>
-                                </p>
+                <footer>
+                    <div id="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-3 text-center">
+                                    <p class="fh5co-social-icons">
+                                        <a target="_blank" href="https://plus.google.com/+MudarFARZAT/posts"><i class="icon-google2"></i></a>
+                                        <a target="_blank" href="https://www.youtube.com/channel/UCCSnx8NH7vsXUPvpUGi4aZg"><i class="icon-youtube"></i></a>
+                                        <a target="_blank" href="https://www.facebook.com/farzatgroup?ref=hl"><i class="icon-facebook2"></i></a>
+                                        <!--  <a target="_blank" href="#"><i class="icon-instagram"></i></a> -->
+                                        <a target="_blank" href="https://www.linkedin.com/in/farzat-group-for-development-a8b779135/"><i class="icon-linkedin2"></i></a>
+                                        <a target="_blank" href="skype:m_farzat?call"><i class="icon-skype2"></i></a>
+                                    </p>
+                                    <p style="margin-bottom:0;">
+                                        Copyright 2016 Farzat Group.
+                                        <a href="#"></a> All Rights Reserved. <br>Made by <a href="https://www.facebook.com/Suliman.Farzat" target="_blank">Suliman Farzat</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
 
-        </div>
+            </div>
         <!-- END fh5co-page -->
 
     </div>
@@ -1197,43 +353,18 @@
 
     <script type="text/javascript" src="js/scroll2.js"></script>
 
-    <!--   <script type="text/javascript" src="js/script-slide.js"></script> -->
-    <!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->
-
-    <script type="text/javascript" src="js/jquery.quickflip.source.js"></script>
-    <script type="text/javascript" src="js/rotate3Di.js"></script>
-
-
     <!-- Main JS -->
     <script src="js/main.js"></script>
-    <!-- <script src="js/animate.js"></script> -->
     <!-- 1. Add latest jQuery and fancyBox files -->
     <script type="text/javascript" src="js/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
 
-    <script type="text/javascript">
-                            function onClick(element) {
-                                document.getElementById("img01").src = element.src;
-                                document.getElementById("modal01").style.display = "block";
-                            };
-    </script>
-    <script type="text/javascript">
-                            $(function () {
-                                $('.quickFlip').quickFlip();
 
-                                $('.quickFlip3').quickFlip({
-                                    vertical: true
+    <script type="text/javascript">
+                            $(document).ready(function () {
+                                $("#quickFlip").click(function () {
+                                    $("#quickFlipCta").slideToggle("slow");
                                 });
-
-                                $('.quickFlip2').quickFlip();
                             });
-    </script>
-    <script>
-
-                                if (window.matchMedia('(max-width: 768px)').matches) {
-                                    document.getElementById("fh5co-header-section").style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
-                                    document.getElementById("fh5co-header-section").style.height = '147px';
-                                }
-            
     </script>
 
     <script type="text/javascript">
