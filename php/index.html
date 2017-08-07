@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>AngularJS CRUD Operations with PHP and MySQL by CodexWorld</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /* required style*/
+        .none {
+            display: none;
+        }
+
+        /* optional styles */
+        table tr th, table tr td {
+            font-size: 1.2rem;
+        }
+
+        .row {
+            margin: 20px 20px 20px 20px;
+            width: 100%;
+        }
+
+        .glyphicon {
+            font-size: 20px;
+        }
+
+        .glyphicon-plus {
+            float: right;
+        }
+
+        a.glyphicon {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .glyphicon-trash {
+            margin-left: 10px;
+        }
+
+        .alert {
+            width: 50%;
+            border-radius: 0;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <!--requerd-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>-->
+    <script>
+
+    </script>
+</head>
+<body ng-app="crudApp">
+    <div class="container" ng-controller="userController" ng-init="getRecords()">
+        <div class="row">
+            <h2>AngularJS CRUD Operations with PHP and MySQL</h2>
+            <h2>FARZAT GROUP FOR DEVELOPMENT</h2>
+            <div class="panel panel-default users-content">
+                <div class="panel-heading">products <a href="javascript:void(0);" class="glyphicon glyphicon-plus" onClick="$('.formData').slideToggle();"></a></div>
+                <div class="alert alert-danger none"><p></p></div>
+                <div class="alert alert-success none"><p></p></div>
+                <div class="panel-body none formData">
+                    <form class="form" name="userForm">
+                        <div class="form-group">
+                            <label>product name</label>
+                            <input type="text" class="form-control" name="product_name" ng-model="tempUserData.product_name" />
+                        </div>
+                        <div class="form-group">
+                            <label>product price</label>
+                            <input type="text" class="form-control" name="product_price" ng-model="tempUserData.product_price" />
+                        </div>
+                        <md-input-container>
+                            <label>Street Name</label>
+                            <input>
+                        </md-input-container>
+                        <div class="form-group">
+                            <label>edit from</label>
+                            <input type="text" class="form-control" name="edit_from" ng-model="tempUserData.edit_from" />
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-warning" onClick="$('.formData').slideUp();">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-success" ng-hide="tempUserData.id" ng-click="addUser()">Add product</a>
+                        <a href="javascript:void(0);" class="btn btn-success" ng-hide="!tempUserData.id" ng-click="updateUser()">Update product</a>
+                    </form>
+                </div>
+
+                <table class="table table-striped">
+                    <tr>
+                        <th width="5%">#</th>
+                        <th width="20%">product_name</th>
+                        <th width="30%">product_price</th>
+                        <th width="20%">edit_from</th>
+                        <th width="14%">Created</th>
+                        <th width="10%"></th>
+                    </tr>
+                    <tr ng-repeat="user in users | orderBy:'-created'">
+                        <td>{{$index + 1}}</td>
+                        <td>{{user.product_name}}</td>
+                        <td>{{user.product_price}}</td>
+                        <td>{{user.edit_from}}</td>
+                        <td>{{user.created}}</td>
+                        <td>
+                            <a href="javascript:void(0);" class="glyphicon glyphicon-edit" ng-click="editUser(user)"></a>
+                            <a href="javascript:void(0);" class="glyphicon glyphicon-trash" ng-click="deleteUser(user)"></a>
+                        </td>
+                    </tr>
+                </table>
+
+                <md-content>
+                    <md-list flex>
+                        <md-subheader class="md-no-sticky">3 line item (with hover)</md-subheader>
+                        <md-list-item class="md-3-line" ng-repeat="user in users" ng-click="null">
+                            <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />
+                            <div class="md-list-item-text" layout="column">
+                                <h3>{{ user.product_name }}</h3>
+                                <h4>{{ user.product_price }}</h4>
+                                <p>{{ user.edit_from }}</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-content>
+                          
+</div>
+        </div>
+    </div>
+
+<script src="controller.js"></script>
+</body>
+</html>
