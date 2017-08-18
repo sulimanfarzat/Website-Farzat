@@ -99,7 +99,7 @@ $(window).on("scroll", function () {
 $('a[href^=#]').on('click', function (e) {
     var href = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $(href).offset().top - 50
+        scrollTop: $(href).offset().top - 80
     }, 700);
     e.preventDefault();
 });

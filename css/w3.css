@@ -1303,8 +1303,10 @@ w3-margin {
 
 .w3-bottombar {
     border-bottom: 4px solid #2dbe60 !important;
-    width: 135px;
     position: relative;
+    /*width:150px;*/
+    max-width:4em;
+    min-width: 3em;
 }
 
 .w3-leftbar {

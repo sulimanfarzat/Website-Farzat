@@ -397,14 +397,14 @@ figure {
                         color: #5a5a5a;
                     }
 
-            .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover img {
-                -webkit-transform: scale(1.1);
-                -moz-transform: scale(1.1);
-                -ms-transform: scale(1.1);
-                -o-transform: scale(1.1);
-                transform: scale(1.1);
-                filter: saturate(2);
-            }
+            /*.fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover img {
+                -webkit-transform: scale(0.95);
+                -moz-transform: scale(0.95);
+                -ms-transform: scale(0.95);
+                -o-transform: scale(0.95);
+                transform: scale(0.95);
+               filter: saturate(2);
+            }*/
 
             .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover:after {
                 -webkit-box-shadow: inset 0px -126px 311px -69px rgba(0, 0, 0, 0.95);
