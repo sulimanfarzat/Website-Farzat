@@ -100,7 +100,7 @@ a {
 
     a:hover {
         text-decoration: none ;
-        color: #999 ;
+        color: #fff ;
     }
 
 header {
@@ -357,7 +357,7 @@ figure {
             .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy {
                 position: absolute;
                 /*bottom: -50px;*/
-                left: 100px;
+                left: 35px;
                 right: 20px;
                 z-index: 15;
                 font-size: 16px;
@@ -365,7 +365,7 @@ figure {
 
                 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy h2 {
                     color: #5a5a5a;
-                    font-size: 26px;
+                    font-size: 20px;
                     font-weight: 600;
                     -webkit-transition: 0.2s;
                     -o-transition: 0.2s;
@@ -378,10 +378,10 @@ figure {
                     right: 0;
                     top: 0;
                     bottom: 20px;
-                    width: 30px;
-                    height: 30px;
+                    width: 20px;
+                    height: 20px;
                     border: 1px solid #5a5a5a;
-                    line-height: 32px;
+                    line-height: 22px;
                     font-size: 16px;
                     text-align: center;
                     -webkit-border-radius: 50%;
@@ -648,7 +648,7 @@ figure {
     font-weight: 700;
     float: left;
     left: 0px;
-    margin: 0px 0px 2px -115px;
+    margin: 0px 0px 2px -135px;
     width: 110px !important;
     background: #02411c;
     /*border: solid #fff ;*/
@@ -659,27 +659,37 @@ figure {
     #fh5co-logo span {
         font-weight: 700;
     }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     #fh5co-logo {
-        background: none;
-        box-shadow: none;
-        width: 100px;
-        float: none;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        top: 0;
-        padding: 8px;
-        position: relative;
+        margin: 0px 0px 2px -105px;
+        width: 90px !important;
     }
-
-        #fh5co-logo:hover, #fh5co-logo:focus {
-            background-color: none;
-        }
 }
+@media screen and (max-width: 992px) {
+    #fh5co-logo {
+        display: none;
+    }
+}
+        @media screen and (max-width: 768px) {
+            #fh5co-logo {
+                background: none;
+                box-shadow: none;
+                width: 100px;
+                float: none;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+                top: 0;
+                padding: 8px;
+                position: relative;
+            }
 
-#fh5co-logo a {
+                #fh5co-logo:hover, #fh5co-logo:focus {
+                    background-color: none;
+                }
+        }
+
+        #fh5co-logo a {
     color: #fff;
 }
 

@@ -67,17 +67,41 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-<style>.expander {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 16px;
-    height: 16px;
-    padding: 4px;
-    background: white url() center center no-repeat;
-    z-index: 99999;   
-    cursor: pointer;
-}
+<style>
+    .expander {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 16px;
+        height: 16px;
+        padding: 4px;
+        background: white url() center center no-repeat;
+        z-index: 99999;
+        cursor: pointer;
+    }
+
+    body {
+        background: url(images/megaplast/mega_2/6.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .cb-slideshow,
+    .cb-slideshow:after {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+    }
+
+        .cb-slideshow:after {
+            content: '';
+            background: transparent url(../images/pattern.png) repeat top left;
+        }
 </style>
 	</head>
 	
@@ -142,11 +166,11 @@
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5">
-			
-			<div style="position:fixed;width:100%;object-fit:cover;object-position:center center;" class=""> <video muted=”muted” preload="yes" autoplay="autoplay" loop="loop" width="100%" height="100%" >
+                <div class="cb-slideshow"></div>
+			<!--<div style="position:fixed;width:100%;object-fit:cover;object-position:center center;" class=""> <video muted=”muted” preload="yes" autoplay="autoplay" loop="loop" width="100%" height="100%" >
 			<source src="images/megaplast/MEGAPLAST_2016.mp4">
 				</video>
-		    </div>
+		    </div>-->
 				<div class="desc animated fadeInUpBig master-body" style="top:17em;">
 					
 					<h2>FARZAT PLASTIC MANUFACTURES CO.LTD. (MEGAPLAST)</h2>
@@ -160,18 +184,27 @@
 
 		<div class="fh5co-listing" >
 			<div class="container">
-                <h4 class="w3-margin-0 w3-bottombar">ABOUT</h4>
+                <h4 style="border-bottom: 4px solid #2dbe60;width:3.5em;">ABOUT</h4>
 				<div id="famco">
                         <p class="animate" data-outimation="fadeOut" data-inimation="bounceInLeft">
-                            Joint venture (Syrian – South Korean) industrial company, Founded in 2008.
+                            Joint venture (Syrian – South Korean) industrial company, Founded in 2008.<br />
                             It produces all types of plastic products.<br />
-                            <strong> &nbsp;Location / Head office:</strong>&nbsp   HESSIA industrial zone – HOMS – SYRIA.&nbsp; &nbsp;<a data-fancybox href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421740.71291214094!2d36.574955685222086!3d34.32885657004049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1522e5428aafde5d%3A0xd66d4916255e1085!2zRkFSWkFUIGZvciBQTEFTVElDIE1BTlVGQUNUVVJFUyBDTy5MVEQgKE1FR0FQTEFTVCkg2YHZgNmA2LHYstin2Kog2YTZhNmA2LXZgNmG2YDYp9i52YDYp9iqINin2YTZgNio2YDZhNin2LPZgNiq2YDZitmA2YPZgNmK2Ycg2LQu2YUu2YUg2YXZitis2KfYqNmE2KfYs9iq!5e0!3m2!1sde!2sde!4v1487544789020"><img style="width:40px" src="images/logos/Google-Maps-icon.png" /></a><br />
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d283787.7173856633!2d36.66737287110818!3d34.46872066974054!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd66d4916255e1085!2zRkFSWkFUIFBMQVNUSUMgTUFOVUZBQ1RVUkVTIENPLkxURCAoTUVHQVBMQVNUKSDZgdmA2YDYsdiy2KfYqiDZhNmE2YDYtdmA2YbZgNin2LnZgNin2Kog2KfZhNmA2KjZgNmE2KfYs9mA2KrZgNmK2YDZg9mA2YrZhyDYtC7ZhS7ZhSDZhdmK2KzYp9io2YTYp9iz2Ko!5e1!3m2!1sde!2sde!4v1501829994135" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>                        </p>
+                            Location / Head office: HESSIA industrial zone – HOMS – SYRIA.<!--&nbsp; &nbsp;<a data-fancybox href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421740.71291214094!2d36.574955685222086!3d34.32885657004049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1522e5428aafde5d%3A0xd66d4916255e1085!2zRkFSWkFUIGZvciBQTEFTVElDIE1BTlVGQUNUVVJFUyBDTy5MVEQgKE1FR0FQTEFTVCkg2YHZgNmA2LHYstin2Kog2YTZhNmA2LXZgNmG2YDYp9i52YDYp9iqINin2YTZgNio2YDZhNin2LPZgNiq2YDZitmA2YPZgNmK2Ycg2LQu2YUu2YUg2YXZitis2KfYqNmE2KfYs9iq!5e0!3m2!1sde!2sde!4v1487544789020"><img style="width:40px" src="images/logos/Google-Maps-icon.png" /></a><br />-->
+                        </p>
+                    <div class="w3-container  w3-margin-bottom" style="padding-left:0">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d283787.7173856633!2d36.66737287110818!3d34.46872066974054!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd66d4916255e1085!2zRkFSWkFUIFBMQVNUSUMgTUFOVUZBQ1RVUkVTIENPLkxURCAoTUVHQVBMQVNUKSDZgdmA2YDYsdiy2KfYqiDZhNmE2YDYtdmA2YbZgNin2LnZgNin2Kog2KfZhNmA2KjZgNmE2KfYs9mA2KrZgNmK2YDZg9mA2YrZhyDYtC7ZhS7ZhSDZhdmK2KzYp9io2YTYp9iz2Ko!5e1!3m2!1sde!2sde!4v1501829994135" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a data-fancybox href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421740.71291214094!2d36.574955685222086!3d34.32885657004049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1522e5428aafde5d%3A0xd66d4916255e1085!2zRkFSWkFUIGZvciBQTEFTVElDIE1BTlVGQUNUVVJFUyBDTy5MVEQgKE1FR0FQTEFTVCkg2YHZgNmA2LHYstin2Kog2YTZhNmA2LXZgNmG2YDYp9i52YDYp9iqINin2YTZgNio2YDZhNin2LPZgNiq2YDZitmA2YPZgNmK2Ycg2LQu2YUu2YUg2YXZitis2KfYqNmE2KfYs9iq!5e0!3m2!1sde!2sde!4v1487544789020" style="width:300px;margin-bottom:10px;" class="w3-padding w3-hover-light-green w3-green w3-btn"><i class="material-icons w3-left">&#xE55B;</i>Google Map</a>
+                            <a data-fancybox href="https://youtu.be/WHZWUWSqelo?list=PL-Hnnh4vkNelC3_5vV78ThUBooYS1F8S8" style="width:300px;margin-bottom:10px;" class="w3-padding w3-hover-light-green w3-green w3-btn"><i class="material-icons w3-left">&#xE038;</i>Watch Vedio</a>
+                        </div>
+                    </div>
                         <!--<div class="w3-center" style="opacity: 0.6;"><a href="#COMPANY"><i class="w3-text-amber w3-hover-text-blue w3-jumbo material-icons">&#xE313;</i></a></div>-->
 
                     </div>
 				<!--start  images oils -->
-                <h4 class="w3-bottombar" id="COMPANY">THE&nbsp;FACTORY</h4>
+                <h4 style="border-bottom: 4px solid #2dbe60;width:7em;" id="COMPANY">THE&nbsp;FACTORY</h4>
 <div class="row">	
 	    <div class="col-md-2 col-sm-2 col-xs-4">
 			<a data-fancybox="COMPANY" class="zoomer" rel="megaplast" href="images/megaplast/mega_2/3.jpg" title="">
@@ -238,7 +271,7 @@
 			</a>
 		</div>
 </div>
-    <h4 class="w3-bottombar">PRODUCTS</h4>
+    <h4 style="border-bottom: 4px solid #2dbe60;width:5.75em;">PRODUCTS</h4>
 <div class="row">			
 		<div class="col-md-2 col-sm-2 col-xs-4">
 			<a data-fancybox="products" class="zoomer" rel="megaplast" href="images/megaplast/mega_1/A3.png" title="">
@@ -276,7 +309,7 @@
 		
 		
 		<footer>
-        <div id="footer" class="w3-opacity-min">
+        <div id="footer">
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-3 text-center">

@@ -98,7 +98,7 @@ $(window).on("scroll", function() {
 $('a[href^=#]').on('click', function(e) {
     var href = $(this).attr('href');
     $('html, body').animate({
-        scrollTop: $(href).offset().top - 80
+        scrollTop: $(href).offset().top - 90
     }, 700);
     e.preventDefault();
 });
@@ -177,3 +177,39 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("fh5co-header").style.display = "block";
 }
+
+//تحميل صور اكثر
+
+/*
+	Load more content with jQuery - May 21, 2013
+	(c) 2013 @ElmahdiMahmoud
+*/
+
+$(function () {
+    $("div").slice(0, 2).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $("div:hidden").slice(0, 2).slideDown();
+        if ($("div:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top
+        }, 1500);
+    });
+});
+
+$('a[href=#top]').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 600);
+    return false;
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $('.totop a').fadeIn();
+    } else {
+        $('.totop a').fadeOut();
+    }
+});

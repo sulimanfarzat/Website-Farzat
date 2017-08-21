@@ -56,8 +56,31 @@
 
 
     <link rel="stylesheet" href="js/fancybox-3.0/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylesham.css" />
+        <style type="text/css">
+       
+            body {
+                background: url(images/shamtex/SHAMTEX_2/1.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .cb-slideshow,
+            .cb-slideshow:after {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                z-index: 0;
+            }
 
-	
+                .cb-slideshow:after {
+                    content: '';
+                    background: transparent url(../images/pattern.png) repeat top left;
+                }
+        </style>
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -129,10 +152,7 @@
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url();">			
-		<div style="position:fixed;width:100%;object-fit:cover;object-position:center center;" class=""> <video muted="muted" preload="yes" autoplay="autoplay" loop="loop" width="100%" height="100%" >
-			<source src="images/shamtex/SHAMTEX.mp4">
-				</video>
-		    </div>
+                <div class="cb-slideshow"></div>
 				<div class="desc animated fadeInUpBig master-body" style="top:17em;">
 					<h2>SHAMTEX CO.SA.</h2>
 					<div><img class="logo-small boxlogo" src="images/shamtex/logopng.png"></div><br>
@@ -145,53 +165,70 @@
 
 		<div class="fh5co-listing" >
 			<div class="container">
-                <h4 class="w3-bottombar w3-margin-0">ABOUT</h4>
-				<div id="famco">
+                <h4 style="border-bottom: 4px solid #2dbe60;width:3.5em;">ABOUT</h4>
+                <div id="famco">
                     <p class="animate" data-outimation="fadeOut" data-inimation="bounceInLeft">
                         Industrial company, founded in 2008, on 40,000 sqm.<br />
                         Main Products: fine cotton yarns in single / double.
                         <br>
-                        <strong>Location / Head office:</strong>&nbsp   10th of RAMADAN CITY – EGYPT.&nbsp; 
-                        <a data-fancybox class="video icon-youtube22 w3-hover-text-blue w3-text-red w3-xlarge" href="https://www.youtube.com/watch?v=C_twe5FdzBA"></a><br />
-                        <a data-fancybox href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441393.78187493066!2d31.500781360148096!3d30.19744531212292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457fc742ca7cf45%3A0x99898095f8a75678!2z2LTZgNin2YUg2KrZgNmD2YDYsyBTSEFNVEVYIENPLlNB!5e0!3m2!1sde!2sde!4v1487543729014"><img style="width:40px;" src="images/logos/Google-Maps-icon.png" /></a>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d266129.7438270668!2d31.501349448476062!3d30.220591821691865!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99898095f8a75678!2z2LTZgNin2YUg2KrZgNmD2YDYsyBTSEFNVEVYIENPLlNB!5e1!3m2!1sde!2sde!4v1501830325175" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>                    </p>
-					<div class="w3-bar">
-					<div style="width:300px;margin-bottom:10px;" class="w3-padding w3-hover-amber w3-blue w3-btn" href="#" onclick="window.open('images/shamtex/SHAMTEX_1/SHAMTEX CO.SA.pdf', '_blank', 'fullscreen=yes'); return false;">
-					<i class="material-icons">&#xE415; &nbsp;</i>SHAMTEX CATALOGUE</div>
-					<!--<div style="width:300px;margin:20px;" class="w3-padding w3-hover-amber w3-blue w3-btn  w3-margin" href="#" onclick="window.open('images/shamtex/SHAMTEX_1/SHAMTEX GIZA CERT.2011.pdf', '_blank', 'fullscreen=yes'); return false;">
-					<i class="material-icons">&#xE415; &nbsp;</i>SHAMTEX GIZA CERT.2011</div>-->
-					</div>
-					<!--<div class="w3-center" style="opacity: 0.6;"><a href="#products"><i class="w3-text-amber w3-hover-text-blue w3-jumbo material-icons">&#xE313;</i></a></div>-->
-				</div>
-                    <h4 class="w3-bottombar" id="products">THE&nbsp;FACTORY</h4>
+                        Location / Head office: 10th of RAMADAN CITY – EGYPT.<br />
+                    </p>
+                    <div class="w3-container  w3-margin-bottom" style="padding-left:0">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d266129.7438270668!2d31.501349448476062!3d30.220591821691865!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99898095f8a75678!2z2LTZgNin2YUg2KrZgNmD2YDYsyBTSEFNVEVYIENPLlNB!5e1!3m2!1sde!2sde!4v1501830325175" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div><!--<a data-fancybox class="col-md-1" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441393.78187493066!2d31.500781360148096!3d30.19744531212292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457fc742ca7cf45%3A0x99898095f8a75678!2z2LTZgNin2YUg2KrZgNmD2YDYsyBTSEFNVEVYIENPLlNB!5e0!3m2!1sde!2sde!4v1487543729014"><img style="width:40px;" src="images/logos/Google-Maps-icon.png" /></a>-->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a data-fancybox href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441393.78187493066!2d31.500781360148096!3d30.19744531212292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457fc742ca7cf45%3A0x99898095f8a75678!2z2LTZgNin2YUg2KrZgNmD2YDYsyBTSEFNVEVYIENPLlNB!5e0!3m2!1sde!2sde!4v1487543729014" style="width:300px;margin-bottom:10px;" class="w3-padding w3-hover-light-green w3-green w3-btn"><i class="material-icons w3-left">&#xE55B;</i>Google Map</a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=C_twe5FdzBA" style="width:300px;margin-bottom:10px;" class="w3-padding w3-hover-light-green w3-green w3-btn"><i class="material-icons w3-left">&#xE038;</i>Watch Vedio</a>
+                            <div style="width:300px;margin-bottom:10px;" class="w3-padding w3-hover-light-green w3-green w3-btn" href="#" onclick="window.open('images/shamtex/SHAMTEX_1/SHAMTEX CO.SA.pdf', '_blank', 'fullscreen=yes'); return false;">
+                                <i class="material-icons w3-left">&#xE415;</i>SHAMTEX Catalogue
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div style="width:300px;margin:20px;" class="w3-padding w3-hover-amber w3-blue w3-btn  w3-margin" href="#" onclick="window.open('images/shamtex/SHAMTEX_1/SHAMTEX GIZA CERT.2011.pdf', '_blank', 'fullscreen=yes'); return false;">
+        <i class="material-icons">&#xE415; &nbsp;</i>SHAMTEX GIZA CERT.2011</div>-->
+                    <!--<div class="w3-center" style="opacity: 0.6;"><a href="#products"><i class="w3-text-amber w3-hover-text-blue w3-jumbo material-icons">&#xE313;</i></a></div>-->
+                </div>
+                    <h4 style="border-bottom: 4px solid #2dbe60;width:7em;" id="products">THE&nbsp;FACTORY</h4>
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 w3-margin-bottom">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_1/1.png" title="">
-                                <div class="">
-                                    <img class="" style="width:100%;height:320px;" src="images/shamtex/SHAMTEX_1/1.png" alt="">
-
+                    
+                        <div class="col-md-2 col-sm-2 col-xs-4">
+                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_1/2.JPG" title="">
+                                <div class="overlay-zoom">
+                                    <img class="" style="width:100%;" src="images/shamtex/SHAMTEX_1/2.JPG" alt="">
+                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_1/2.JPG" title="">
-                                <img class="" style="width:100%;" src="images/shamtex/SHAMTEX_1/2.JPG" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="col-md-2 col-sm-2 col-xs-4">
                             <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_1/3.JPG" title="">
-                                <img class="" style="width:100%;" src="images/shamtex/SHAMTEX_1/3.JPG" alt="">
+                                <div class="overlay-zoom">
+                                    <img class="" style="width:100%;" src="images/shamtex/SHAMTEX_1/3.JPG" alt="">
+                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
+                                </div>
                             </a>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="col-md-2 col-sm-2 col-xs-4">
                             <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_1/4.jpg" title="">
-                                <img class="" style="width:100%;" src="images/shamtex/SHAMTEX_1/4.jpg" alt="">
+                                <div class="overlay-zoom">
+                                    <img class="" style="width:100%;" src="images/shamtex/SHAMTEX_1/4.jpg" alt="">
+                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
+                                </div>
                             </a>
                         </div>
+                        
                     </div>
                     <!--<div class="w3-center" style="opacity: 0.5;"><a href="#shamtex"><i class="w3-hover-text-amber w3-jumbo material-icons">&#xE313;</i></a></div>-->
 
                     <div class="row">
+                        <div class="col-md-2 col-sm-2 col-xs-4">
+                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_1/1.png" title="">
+                                <div class="overlay-zoom">
+                                    <img class="img-thumbnail" src="images/shamtex/SHAMTEX_1/1.png" alt="">
+                                    <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
+                                </div>
+                            </a>
+                        </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/1.jpg" title="">
                                 <div class="overlay-zoom">
@@ -325,10 +362,10 @@
                         
 
                     </div>
-                    <h4 class="w3-bottombar">PRODUCTS</h4>
+                    <h4 style="border-bottom: 4px solid #2dbe60;width:5.75em;">PRODUCTS</h4>
                     <div class="row">
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/5.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/5.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/5.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -336,7 +373,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/16.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/16.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/16.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -344,7 +381,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/17.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/17.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/17.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -352,7 +389,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/18.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/18.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/18.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -360,7 +397,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/19.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/19.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/19.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -368,7 +405,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/20.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/20.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/20.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -376,7 +413,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/21.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/21.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/21.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -384,7 +421,7 @@
                             </a>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
-                            <a data-fancybox="images" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/22.jpg" title="">
+                            <a data-fancybox="products" class="zoomer" rel="shamtex" href="images/shamtex/SHAMTEX_2/22.jpg" title="">
                                 <div class="overlay-zoom">
                                     <img class="img-thumbnail" src="images/shamtex/SHAMTEX_2/22.jpg" alt="">
                                     <div class="zoom-icon"> <i class="material-icons">&#xE8B6;</i></div>
@@ -404,7 +441,7 @@
 		
 		
 		<footer>
-        <div id="footer" class="w3-opacity-min">
+        <div id="footer">
           <div class="container">
             <div class="row">
               <div class="col-md-6 col-md-offset-3 text-center">

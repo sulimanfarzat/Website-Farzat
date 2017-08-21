@@ -1,9 +1,9 @@
 ﻿
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" class="no-js"> <!--<![endif]-->
 	<head>
 	<meta content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,9 +45,6 @@
         <link rel="stylesheet" href="css/w3.css">
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-        <link type="text/css" rel="stylesheet" href="css/style-slide.css" />
-
 
 
 	<!-- Modernizr JS -->
@@ -116,7 +113,7 @@
       </div>
 		
 		
-		<div style="padding-top:130px">			
+		<div style="padding-top:50px">			
 		<div id="fh5co-contact" class="fh5co-section animate-box">
 			<div class="container">
 				
@@ -125,35 +122,36 @@
 							<h3 class="section-title">Our Address:</h3>
 							<!--<p>FARZAT GROUP FOR DEVELOPMENT.</p>-->
 							<ul class="contact-info">
-								<!--<li><i class="icon-location-pin"></i>FARZAT BUILDING, AL DABLAN GARDEN</li>-->
 								<li><i class="icon-phone2"></i>+20 554 412 937</li>
                                 <li><i class="icon-old-phone"></i>+20 554 412 939</li>
                                 <li><i class="icon-phone"></i>+20 12 0110 5350</li>
 								<li><i class="icon-mail"></i><a href="#"> info@farzat.co</a></li>
 								<li><i class="icon-globe2"></i><a href="index.html"> www.farzat.co</a></li>
+                                <li><i class="icon-location-pin"></i>PLOT NO.114<br />INDUSTRIAL ARE A6<br />10th of RAMADAN CIT – EGYPT</li>
 							</ul>
 						</div>
                         <div class="col-md-8">
                             <div class="row">
-                                <form method="post" action="?">
+                                <form action="email/send_mail.php" method="post">
+                                    
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name">
+                                            <input type="text" name="user_name" value="" class="form-control" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" placeholder="Email">
+                                            <input type="text" name="email_address" value="" class="form-control" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                                            <textarea name="comments" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input  id="submit" name="submit" type="submit" value="Send Message" class="btn btn-primary">
+                                            <input name="submit" type="submit" value="Send A Message" class="btn btn-primary">
                                         </div>
                                     </div>
                                     </form>
@@ -229,48 +227,8 @@
 
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
-    <!--<script type="text/javascript" src="js/scroll2.js"></script>-->
 
-            <!--<script>
-                $(window).on("scroll", function () {
-                    if ($(this).scrollTop() > 150) {
-                        $("header").addClass("w3-green");
-                    }
-                    else {
-                        $("header").removeClass("w3-green");
-                    }
-                });
-            </script>-->
 
-        <script>
-            var form = document.getElementsByTagName('form')[0];
-            form.addEventListener('submit', contact, false);
-            function contact(e) {
-                // Prevent Default Form Submission
-                e.preventDefault();
-
-                var target = e.target || e.srcElement;
-                var i = 0;
-                var message = '';
-
-                // Loop Through All Input Fields
-                for (i = 0; i < target.length; ++i) {
-                    // Check to make sure it's a value. Don't need to include Buttons
-                    if (target[i].type != 'text' && target[i].type != 'textarea') {
-                        // Skip to next input since this one doesn't match our rules
-                        continue;
-                    }
-
-                    // Add Input Name and value followed by a line break
-                    message += target[i].name + ': ' + target[i].value + "\r\n";
-                }
-                // Modify the hidden body input field that is required for the mailto: scheme
-                target.elements["body"].value = message;
-
-                // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-                this.submit();
-            }
-        </script>
 	</body>
 </html>
 

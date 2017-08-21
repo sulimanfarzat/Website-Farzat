@@ -1,4 +1,4 @@
-/* W3.CSS 2.84 Dec 2016 by Jan Egil and Borge Refsnes */
+﻿/* W3.CSS 2.84 Dec 2016 by Jan Egil and Borge Refsnes */
 /* html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit} */
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 /* html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -1769,7 +1769,7 @@ w3-margin {
 
 .w3-light-green, .w3-hover-light-green:hover {
     color: #000 !important;
-    background-color: #8bc34a !important
+    background-color: #0d9f40 !important
 }
 
 .w3-indigo, .w3-hover-indigo:hover {
@@ -2752,9 +2752,9 @@ a.polaroid {
         transform: rotate(0deg);
         Background: #0d9f40;
         -webkit-transform: scale(1.25);
-        ��-moz-transform: scale(1.25);
-        ��-ms-transform: scale(1.25);
-        ��-o-transform: scale(1.25);
+          -moz-transform: scale(1.25);
+          -ms-transform: scale(1.25);
+          -o-transform: scale(1.25);
     }
 
 .polaroid img {
@@ -2975,3 +2975,49 @@ a img {
     z-index: 5;
     /*color: #f44336 !important;*/
 }
+
+
+/*تحميل صور اكثر*/
+
+/*.w3-hideImg {
+    display: none !important;
+    padding: 10px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+}
+
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+    .totop a {
+        display: none;
+    }
+
+
+
+#loadMore {
+    padding: 10px;
+    text-align: center;
+    background-color: #33739E;
+    color: #fff;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+}
+
+    #loadMore:hover {
+        background-color: #fff;
+        color: #33739E;
+    }*/
