@@ -1,40 +1,40 @@
 ﻿// Make home page video wrapper always take 100% width and height
-	function fullscreen() {
-		var masthead = jQuery('.master-video-wrapper');
-		var windowH = jQuery(window).height() - 50;
-		var windowW = jQuery(window).width();
+function fullscreen() {
+    var masthead = jQuery('.master-video-wrapper');
+    var windowH = jQuery(window).height() - 50;
+    var windowW = jQuery(window).width();
 
-		masthead.width(windowW);
-		masthead.height(windowH);
-	}
+    masthead.width(windowW);
+    masthead.height(windowH);
+}
 
-	function headerParallax() {
-		var st = jQuery(window).scrollTop();
-		var headerScroll = jQuery('.master-body');
+function headerParallax() {
+    var st = jQuery(window).scrollTop();
+    var headerScroll = jQuery('.master-body');
 
-		if (st < 500) {
-			headerScroll.css({
-				'opacity' : 1-st/1000,
-				'-webkit-filter' : 'blur(' + st/90 + 'px)',
-				'-moz-filter' : 'blur(' + st/90 + 'px)',
-				'-o-filter' : 'blur(' + st/90 + 'px)',
-				'-ms-filter' : 'blur(' + st/90 + 'px)',
-				filter : 'blur(' + st/90 + 'px)'
-			});
-			jQuery('.master-arrow').css('opacity', 0.5-st/250);
-			headerScroll.css({
-				'-webkit-transform' : 'translateY(' + st/7 + '%)',
-				'-ms-transform' : 'translateY(' + st/7 + '%)',
-				transform : 'translateY(' + st/7 + '%)'
-			});
-		}
-	}
+    if (st < 500) {
+        headerScroll.css({
+            'opacity': 1 - st / 1000,
+            '-webkit-filter': 'blur(' + st / 90 + 'px)',
+            '-moz-filter': 'blur(' + st / 90 + 'px)',
+            '-o-filter': 'blur(' + st / 90 + 'px)',
+            '-ms-filter': 'blur(' + st / 90 + 'px)',
+            filter: 'blur(' + st / 90 + 'px)'
+        });
+        jQuery('.master-arrow').css('opacity', 0.5 - st / 250);
+        headerScroll.css({
+            '-webkit-transform': 'translateY(' + st / 7 + '%)',
+            '-ms-transform': 'translateY(' + st / 7 + '%)',
+            transform: 'translateY(' + st / 7 + '%)'
+        });
+    }
+}
 
-jQuery(document).ready(function() { 
+jQuery(document).ready(function() {
 
-	jQuery(window).resize(fullscreen);
-	jQuery(window).scroll(headerParallax);
-	fullscreen();
+    jQuery(window).resize(fullscreen);
+    jQuery(window).scroll(headerParallax);
+    fullscreen();
 
 });
 
@@ -45,7 +45,7 @@ var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = jQuery('#menu').outerHeight();
 
-jQuery(window).scroll(function(event){
+jQuery(window).scroll(function(event) {
     didScroll = true;
 });
 
@@ -58,32 +58,31 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = jQuery(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
+    if (Math.abs(lastScrollTop - st) <= delta)
         return;
-    
+
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+    if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
         jQuery('#menu').removeClass('nav-down').addClass('nav-up');
     } else {
         // Scroll Up
-        if(st + jQuery(window).height() < jQuery(document).height()) {
+        if (st + jQuery(window).height() < jQuery(document).height()) {
             jQuery('#menu').removeClass('nav-up').addClass('nav-down');
         }
     }
-    
+
     lastScrollTop = st;
 }
 //.........................................................
-$(window).on("scroll", function () {
+$(window).on("scroll", function() {
     if ($(this).scrollTop() > 600) {
         $("header").addClass("w3-green", { duration: 500 });
         $("header").addClass("mobile-disable");
-    }
-    else {
+    } else {
         $("header").removeClass("w3-green");
         $("header").removeClass("mobile-disable");
     }
@@ -96,7 +95,7 @@ $(window).on("scroll", function () {
 });
 //.........................................................
 
-$('a[href^=#]').on('click', function (e) {
+$('a[href^=#]').on('click', function(e) {
     var href = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(href).offset().top - 80
@@ -106,9 +105,9 @@ $('a[href^=#]').on('click', function (e) {
 
 //...............................................................
 
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('a[href$=myNav]').click(function () {
+    $('a[href$=myNav]').click(function() {
         document.getElementById("myNav").style.display = 'block';
 
         //window.location.href = 'founder.html#myNav';
@@ -146,11 +145,11 @@ $(window).on("scroll", function () {
 //فتح الجائزة من زر القائمة
 $('#open-founder')
     //.css({ cursor: "pointer" })
-    .on('click', function () {
+    .on('click', function() {
         openNav();
 
     })
-//فتح الاعوام في الجائزة
+    //فتح الاعوام في الجائزة
 document.getElementsByClassName("tablink")[0].click();
 
 function openCity(evt, cityName) {
