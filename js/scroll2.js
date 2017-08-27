@@ -1,60 +1,60 @@
-﻿// Make home page video wrapper always take 100% width and height
-function fullscreen() {
-    var masthead = jQuery('.master-video-wrapper');
-    var windowH = jQuery(window).height() - 50;
-    var windowW = jQuery(window).width();
+﻿//// Make home page video wrapper always take 100% width and height
+//function fullscreen() {
+//    var masthead = jQuery('.master-video-wrapper');
+//    var windowH = jQuery(window).height() - 50;
+//    var windowW = jQuery(window).width();
 
-    masthead.width(windowW);
-    masthead.height(windowH);
-}
+//    masthead.width(windowW);
+//    masthead.height(windowH);
+//}
 
-function headerParallax() {
-    var st = jQuery(window).scrollTop();
-    var headerScroll = jQuery('.master-body');
+//function headerParallax() {
+//    var st = jQuery(window).scrollTop();
+//    var headerScroll = jQuery('.master-body');
 
-    if (st < 500) {
-        headerScroll.css({
-            'opacity': 1 - st / 1000,
-            '-webkit-filter': 'blur(' + st / 90 + 'px)',
-            '-moz-filter': 'blur(' + st / 90 + 'px)',
-            '-o-filter': 'blur(' + st / 90 + 'px)',
-            '-ms-filter': 'blur(' + st / 90 + 'px)',
-            filter: 'blur(' + st / 90 + 'px)'
-        });
-        jQuery('.master-arrow').css('opacity', 0.5 - st / 250);
-        headerScroll.css({
-            '-webkit-transform': 'translateY(' + st / 7 + '%)',
-            '-ms-transform': 'translateY(' + st / 7 + '%)',
-            transform: 'translateY(' + st / 7 + '%)'
-        });
-    }
-}
+//    if (st < 500) {
+//        headerScroll.css({
+//            'opacity': 1 - st / 1000,
+//            '-webkit-filter': 'blur(' + st / 90 + 'px)',
+//            '-moz-filter': 'blur(' + st / 90 + 'px)',
+//            '-o-filter': 'blur(' + st / 90 + 'px)',
+//            '-ms-filter': 'blur(' + st / 90 + 'px)',
+//            filter: 'blur(' + st / 90 + 'px)'
+//        });
+//        jQuery('.master-arrow').css('opacity', 0.5 - st / 250);
+//        headerScroll.css({
+//            '-webkit-transform': 'translateY(' + st / 7 + '%)',
+//            '-ms-transform': 'translateY(' + st / 7 + '%)',
+//            transform: 'translateY(' + st / 7 + '%)'
+//        });
+//    }
+//}
 
-jQuery(document).ready(function() {
+//jQuery(document).ready(function() {
 
-    jQuery(window).resize(fullscreen);
-    jQuery(window).scroll(headerParallax);
-    fullscreen();
+//    jQuery(window).resize(fullscreen);
+//    jQuery(window).scroll(headerParallax);
+//    fullscreen();
 
-});
+//});
 
-// Make navbar dissapear when scroll down and appear when scroll up
+//// Make navbar dissapear when scroll down and appear when scroll up
 
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = jQuery('#menu').outerHeight();
+//var didScroll;
+//var lastScrollTop = 0;
+//var delta = 5;
+//var navbarHeight = jQuery('#menu').outerHeight();
 
-jQuery(window).scroll(function(event) {
-    didScroll = true;
-});
+//jQuery(window).scroll(function(event) {
+//    didScroll = true;
+//});
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 200);
+//setInterval(function() {
+//    if (didScroll) {
+//        hasScrolled();
+//        didScroll = false;
+//    }
+//}, 200);
 
 function hasScrolled() {
     var st = jQuery(this).scrollTop();
@@ -94,14 +94,17 @@ $(window).on("scroll", function() {
     }
 });
 //.........................................................
+//if (typeof foo !== 'undefined') {
+    // Now we know that foo is defined, we are good to go.
+    $('a[href^=#]').on('click', function (e) {
+        var href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top - 90
+        }, 700);
+        e.preventDefault();
+    });
+//}
 
-$('a[href^=#]').on('click', function(e) {
-    var href = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(href).offset().top - 90
-    }, 700);
-    e.preventDefault();
-});
 
 //...............................................................
 
@@ -114,43 +117,7 @@ $(document).ready(function() {
 
     });
 });
-
-
-//......................box animate...................................
-/* $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 1300 || $(this).scrollTop()< 650) {
-		document.getElementById("box1").style.display = "none";
-    }
-    else {
-		document.getElementById("box1").style.display = "block";
-    }
-});
-$(window).on("scroll", function () {
-    if ($(this).scrollTop() > 1900 || $(this).scrollTop()< 1400) {
-		document.getElementById("box2").style.display = "none";
-    }
-    else {
-		document.getElementById("box2").style.display = "block";
-    }
-});
-$(window).on("scroll", function () {
-    if ($(this).scrollTop() > 2700 || $(this).scrollTop()< 2000) {
-		document.getElementById("box3").style.display = "none";
-    }
-    else {
-		document.getElementById("box3").style.display = "block";
-    }
-});
- */
-//فتح الجائزة من زر القائمة
-$('#open-founder')
-    //.css({ cursor: "pointer" })
-    .on('click', function() {
-        openNav();
-
-    })
-    //فتح الاعوام في الجائزة
-document.getElementsByClassName("tablink")[0].click();
+//...............................................................
 
 function openCity(evt, cityName) {
     var i, x, tablinks;
@@ -178,6 +145,9 @@ function closeNav() {
     document.getElementById("fh5co-header").style.display = "block";
 }
 
+
+
+
 //تحميل صور اكثر
 
 /*
@@ -186,28 +156,75 @@ function closeNav() {
 */
 
 $(function () {
-    $("div").slice(0, 2).show();
+    var elm = document.getElementById("loadMore");
+    var more = document.getElementsByClassName("more");
+    var loader = document.getElementsByClassName("loader");
+    var le = loader.length - 6;
+    $(".loader").slice(0, 6).show();
     $("#loadMore").on('click', function (e) {
+
         e.preventDefault();
-        $("div:hidden").slice(0, 2).slideDown();
-        if ($("div:hidden").length == 0) {
+        if (elm.value === "keyboard_arrow_down") {
+            $(".loader:hidden").slice(0, le).slideDown();
+            if ($(".loader:hidden").length == 0) {
+                $("#load").fadeOut('slow');
+            }
+            more[0].innerHTML = "Show less";
+            elm.value = "keyboard_arrow_up";
+
+        }
+        else if (elm.value === "keyboard_arrow_up") {
+            more.innerHTML = "Show more";
+            $(".loader").slice(0, le).slideUp();
+            elm.value = "keyboard_arrow_down";
             $("#load").fadeOut('slow');
         }
         $('html,body').animate({
-            scrollTop: $(this).offset().top
-        }, 1500);
+            scrollTop: $(this).offset().top -90
+        }, 3000);
+    });
+});
+
+$(function () {
+    var elm = document.getElementById("loadMoreProd");
+    var more = document.getElementsByClassName("more");
+    var loader = document.getElementsByClassName("loaderprod");
+    var le = loader.length - 6;
+    $(".loaderprod").slice(0, 6).show();
+    $("#loadMoreProd").on('click', function (e) {
+
+        e.preventDefault();
+        if (elm.value === "keyboard_arrow_down") {
+            $(".loaderprod:hidden").slice(0, le).slideDown();
+            if ($(".loaderprod:hidden").length == 0) {
+                $("#load").fadeOut('slow');
+            }
+            more[1].innerHTML = "Show less";
+            elm.value = "keyboard_arrow_up";
+
+        }
+        else if (elm.value === "keyboard_arrow_up") {
+            more.innerHTML = "Show more";
+            $(".loaderprod").slice(0, le).slideUp();
+            elm.value = "keyboard_arrow_down";
+            $("#load").fadeOut('slow');
+        }
+
+        $('html,body').animate({
+            scrollTop: $(this).offset().top - 90
+        }, 3000);
     });
 });
 
 $('a[href=#top]').click(function () {
     $('body,html').animate({
         scrollTop: 0
-    }, 600);
+    }, 700);
     return false;
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 600) {
         $('.totop a').fadeIn();
     } else {
         $('.totop a').fadeOut();
