@@ -181,7 +181,7 @@ $(function () {
         }
         $('html,body').animate({
             scrollTop: $(this).offset().top -90
-        }, 3000);
+        }, 2000);
     });
 });
 
@@ -212,7 +212,7 @@ $(function () {
 
         $('html,body').animate({
             scrollTop: $(this).offset().top - 90
-        }, 3000);
+        }, 2000);
     });
 });
 

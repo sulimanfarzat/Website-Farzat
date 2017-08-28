@@ -2691,18 +2691,23 @@ section:hover .section-heading .zoom-viewall {
     background: #02411c;
     margin-bottom: 0px !important;
     border: 5px solid #fff;
-    padding: 15px 0px 50px 0;
+    padding: 15px 0px 35px 0;
 }
 
     .w3-famco h2, .w3-famco i, .w3-famco span {
         color: #f1f1f1 !important;
         border-color: #f1f1f1 !important
     }
-
+    .w3-famco:hover h2, .w3-famco:hover i, .w3-famco:hover span {
+        color: #000 !important;
+        border-color: #000 !important
+    }
     .w3-famco:hover {
         transform: translate3d(-1%,-1%,0);
         -webkit-transform: translate3d(-1%,-1%,0);
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.12);
+        background: #0d9f40 !important;
+        border-color: #0d9f40 !important;
     }
 
 
