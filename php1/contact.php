@@ -29,9 +29,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Farzat Contant</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="farzat.CO" />
-	<meta name="keywords" content="Farzat, farzat, farzat for development, oil, famco, mahmoud farzat, mudar farzat" />
-	<meta name="author" content="farzat.CO" />
+	<meta name="description" content="FARZAT GROUP FOR DEVELOPMENT Started its vital activities at the beginning of 1987, inspired by the national and humanitarian desire to participate in the comprehensive sincere efforts for the development and prosperity of human beings." />
+	<meta name="keywords" content="farzat, Farzat, farzat, farzat for development, oil, famco, mahmoud farzat, mudar farzat, farzat, oil, ghee, sunflower oil, cotton, cotton oil, corn oil, linter, yarns, cotton yarns, plastic, ps, gpps, palm oil, shortening, margarine, cotton meal, soya meal, feed meal, foam meals, foam, homs" />
+	<meta name="author" content="FARZAT GROUP FOR DEVELOPMENT" />
 
  
 
