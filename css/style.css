@@ -659,9 +659,9 @@ figure {
     #fh5co-logo span {
         font-weight: 700;
     }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     #fh5co-logo {
-        margin: 0px 0px 2px -105px;
+        margin: 0px 0px 2px -45px;
         width: 90px !important;
     }
 }
